@@ -1,0 +1,72 @@
+.container {
+    display: grid;
+    margin-right: 550px; 
+    margin-top: 100px;
+    background-image:linear-gradient(to bottom right,violet,red);
+    height: 320px;
+    width: 590px;
+    border-style: solid;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-color:rgb(68, 17, 68);
+}
+.container > div {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#Attempt {
+    text-align: right;
+    font-size: 200%;
+}
+body {
+    background-color:rgb(167, 192, 53);
+}
+#button {
+    width: 20%;
+    border-color:rgb(99, 38, 99);
+    color: black;
+    background-image:linear-gradient(to bottom right,rgb(156, 60, 156),rgb(243, 237, 243));
+    border-top-left-radius: 40%;
+    border-top-right-radius: 40%;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+
+.heading {
+    text-align: center;
+    font-size: 260%;
+    font-weight: 700;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#interact {
+text-align: center;
+font-size: 230%;
+color: rebeccapurple;
+text-shadow: black;
+}
+#input {
+    background-color: yellowgreen;
+    color:black;
+    border-color: red;
+}
+.line {
+    background-image: linear-gradient(to right,violet,red);
+    border-color: transparent;
+}
+.containerpic {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  img {
+    max-width: 50%
+  }
+  .image {
+    flex-basis: 40%
+  }

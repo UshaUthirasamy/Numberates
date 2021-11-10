@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./web.css">
+    </head>
+    <body>
+        <script>
+            a=Math.floor(Math.random()*101);
+            b=10;
+       </script>
+        <div>
+            <p id="Attempt"> No.Of.Attempts : 10</p>
+        </div>
+        <div>
+            <h2 class="heading">NUMBER GUESSING GAME</h2>
+            <hr size="4%" width="510" class="line">
+            <p id="interact"></p>
+            <div class="containerpic">
+            <div class="image">
+                <img src="baby.jpg">
+            </div>
+            <div class="container">
+                <div>
+                <p>Guess the Number between 1 to 100</p>
+                <div>
+                <p>Enter the number:
+                <span><input type="text" id="input" maxlength="2"></span></p>
+                <button onclick="guess()" id="button">Submit</button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script>
+            function guess() {
+                b-=1;
+                if (b<=10 && b>0) {
+                    document.getElementById("Attempt").innerHTML = "Remaining Attempt : "+b;
+                if (document.getElementById("input").value == a) {
+                    document.getElementById("interact").innerHTML = "Congratulations!...You Won";
+                }
+                else if (document.getElementById("input").value < a) {
+                    document.getElementById("interact").innerHTML = "Guessed Number is Small!";
+                }
+                else {
+                    document.getElementById("interact").innerHTML = "Guessed Number is Large!";
+                }
+            }
+            else {
+                document.getElementById("Attempt").innerHTML = "Remaining Attempt : "+0;
+                document.getElementById("interact").innerHTML = "Sorry! Better Luck Next Time";
+            }
+        }
+        </script>
+    </body>
+</html>
